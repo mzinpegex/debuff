@@ -6,6 +6,6 @@ local Debuff = require(DebuffFolder.Constructor)
 uis.InputBegan:Connect(function(input, gameProcessedEvent)
 	if input.KeyCode == Enum.KeyCode.E and not gameProcessedEvent then
 		local plr = game.Players.LocalPlayer
-		Debuff.new(plr.UserId, "Burn")
+		Debuff.new(plr, "Burn")
 	end
 end)
